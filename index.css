@@ -127,3 +127,10 @@ nav ul li a:hover {
 .card h3 {
     margin-top: 0;
 }
+.section-evolution,.card-container, .card:hover{
+    transform: scale(1.09);
+}
+.section-evolution,.card-container, .card{
+   
+    transition:transform 420ms;
+}
