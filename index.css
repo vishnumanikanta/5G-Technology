@@ -46,12 +46,16 @@ nav ul li a {
 }
 
 .logo-text h1 {
-    margin: 0;
+    margin-top: 10px;
     font-size: 24px;
     color: white;
 }
 
-
+.logo-text h3 {
+    margin-top: -25px;
+    font-size: 12px;
+    color: white;
+}
 .logo-subtext {
     margin-left: -164px;
     margin-top: -14px;
@@ -59,16 +63,65 @@ nav ul li a {
     color: white;
     text-align: center;
 }
+
 nav ul li a:hover {
     text-decoration: underline;
     color:#a3a3a3;
-
 }
+
+.section-evolution {
+    width: 100%;
+    overflow-x: auto;
+    padding: 50px 0;
+}
+
+.section-evolution h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    overflow-x: auto;
+    padding: 0 20px;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 18%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 420ms;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.card:hover {
+    transform: scale(1.09);
+}
+
 .section-intro {
     position: relative;
     height: 600px;
     display: flex;
-   
     align-items: center;
 }
 
@@ -87,9 +140,8 @@ nav ul li a:hover {
     color: white;
     padding: 20px;
     box-sizing: border-box;
- margin-top: 350px;
-   width: 100%;
-    object-fit: cover;
+    margin-top: 350px;
+    width: 100%;
 }
 
 .details h2 {
@@ -104,33 +156,60 @@ nav ul li a:hover {
     line-height: 1.6;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
-.details:hover{
+
+.details:hover {
     color: black;
 }
 
-.card-container {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
+.strip1 {
+    padding: 50px;
+    background-color: #1c1c1c;
+    color: white;
+    text-align: left;
+    margin-top: 50px;
+    border-radius: 20px;
 }
 
-.card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    width: 18%;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.strip1 h2 {
+    font-size: 28px;
+}
+.strip1 p{
+   line-height: 1.8;
 }
 
-.card h3 {
-    margin-top: 0;
+.strip1 img {
+    height: 150px;
+    width: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(240, 239, 239, 0.5);
+    margin-left: 80%;
+    margin-top: -500px;
 }
-.section-evolution,.card-container, .card:hover{
-    transform: scale(1.09);
+
+.strip1 img:hover {
+    background-color: #f4f4f4;
 }
-.section-evolution,.card-container, .card{
-   
-    transition:transform 420ms;
+
+
+
+
+.content {
+    margin-top: 10px;
+}
+
+.advantages {
+    display: block;
+}
+
+.disadvantages {
+    display: none;
+}
+
+.card:hover .advantages {
+    display: none;
+}
+
+.card:hover .disadvantages {
+    display: block;
 }
