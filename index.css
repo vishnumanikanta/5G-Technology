@@ -112,12 +112,34 @@ nav ul li a:hover {
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    border: 5px solid black ;
 }
+
 
 .card:hover {
     transform: scale(1.09);
+    border: 2px solid black ;
+    background-color: #a3a3a3;
+   
+
 }
 
+.strip1 img {
+    height: 150px;
+    width: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(240, 239, 239, 0.5);
+    margin-left: 80%;
+    margin-top: -500px;
+    transform: rotateY(30deg) translateZ(50px);
+    transition: transform 0.5s;
+}
+
+.strip1 img:hover {
+    transform: rotateY(30deg) translateZ(100px);
+    box-shadow: 0 8px 16px rgba(240, 239, 239, 0.8);
+}
 .section-intro {
     position: relative;
     height: 600px;
@@ -189,27 +211,11 @@ nav ul li a:hover {
 
 .strip1 img:hover {
     background-color: #f4f4f4;
+   
 }
-
-
-
-
-.content {
-    margin-top: 10px;
-}
-
-.advantages {
-    display: block;
-}
-
-.disadvantages {
-    display: none;
-}
-
-.card:hover .advantages {
-    display: none;
-}
-
-.card:hover .disadvantages {
-    display: block;
+.strip1 img:hover {
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
