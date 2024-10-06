@@ -473,8 +473,11 @@ transform: rotateY(90deg);
 .boximage:hover .box-content{
     transform: rotateY(0deg);
     background-color: #000;
+    
 }
-
+.boximage:hover h3{
+    animation: glow 3s infinite;
+}
 .circletext img{
     height: 300px;
     width: 300px;
@@ -846,3 +849,4 @@ margin-left:450%;
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6ff00, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
     }
 }
+
