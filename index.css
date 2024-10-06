@@ -129,20 +129,20 @@ nav ul li a:hover {
 
 
 .card img {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     border: 3px solid black ;
 }
 
 
 .card:hover {
-    transform: scale(1.09);
-    transform: scale(1.09);
-    border: 2px solid black ;
-    background-color: #a3a3a3;
+    transform: scale(0.9);
+    border: 2px solid black;
+    background-color: transparent;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    transition: transform 0.5s, box-shadow 0.5s;
 }
 
 
@@ -586,4 +586,263 @@ margin-left:450%;
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.7), 
     0 0 50px rgba(255, 255, 255, 0.5),
     0 0 70px rgba(255, 255, 255, 0.4);
+}
+
+.g5 {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 5% auto; 
+    max-width: 700px;
+    background-color: #1c1c1c; 
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    padding: 30px;
+    position: relative; 
+    z-index: 1; 
+    margin-right: 40%;
+}
+
+.g5content {
+    color: white;
+    max-width: 400px; 
+    z-index: 2; 
+}
+
+.g5content p,
+.g5content h3 {
+    line-height: 1.4; 
+    font-size: 14px; 
+}
+
+.g5content h2 {
+    font-size: 18px; 
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6ff00, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
+    animation: glow 3s infinite;
+    text-align: center;
+}
+
+.g5 {
+    position: relative; 
+}
+
+.g5 img {
+    position: absolute; 
+    top: 50%; 
+    right: -450px; 
+    transform: translateY(-50%) rotateY(0deg) rotateX(0deg); 
+    max-width: 350px; 
+    height: 300px;  
+    border-radius: 20px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 0 15px rgba(43, 42, 42, 0.5), 
+                0 0 30px rgba(255, 255, 255, 0.3), 
+                0 0 45px rgba(54, 48, 48, 0.2);
+    z-index: 0; 
+ 
+}
+
+.g5 img:hover {
+    transform: translateY(-50%) rotateY(20deg) rotateX(10deg) scale(1.05); 
+    transform: translateY(-50%) rotateY(10deg) rotateX(10deg) scale(1.05);
+    box-shadow: 0 0 25px rgba(41, 39, 39, 0.7), 
+                0 0 50px rgba(255, 255, 255, 0.5),
+                0 0 70px rgba(255, 255, 255, 0.4);
+    cursor: pointer; 
+}
+
+.g5 img:active {
+    transform: translateY(-50%) rotateY(-10deg) rotateX(0deg) scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+.g5 img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: 1; 
+}
+
+.g5 img:hover::after {
+    opacity: 1; 
+}
+
+.g5 img {
+    animation: imageEntrance 1s ease-in-out forwards;
+}
+
+@keyframes imageEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.logo3 img{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    margin-top: 280%;
+     margin-left:-10%;
+    color: #a3a3a3;
+  opacity: 0.7;
+    animation: rotate 10s linear infinite;
+ 
+}
+
+.logo4 img{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    margin-top: 390%;
+     margin-left:90%;
+    color: #a3a3a3;
+  opacity: 0.7;
+    animation: rotate 10s linear infinite;
+ 
+}
+
+
+
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: white;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer-logo {
+    margin-right: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-logo img {
+    height: 50px;
+    width: 50px;
+   
+}
+
+.footer-links {
+    margin-right: 20px;
+}
+
+.footer-links h3 {
+    font-size: 18px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6ff00, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
+    animation: glow 3s infinite;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #a3a3a3;
+}
+
+.footer-social {
+    margin-right: 20px;
+}
+
+.footer-social h3 {
+    font-size: 18px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6ff00, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
+    animation: glow 3s infinite;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social li {
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #a3a3a3;
+}
+
+.footer-contact {
+    margin-right: 20px;
+}
+
+.footer-contact h3 {
+    font-size: 18px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6ff00, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
+    animation: glow 3s infinite;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    padding: 10px;
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+ 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.footer-copyright:hover{
+
+}
+.footer-copyright p {
+    margin: 0;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6ff00, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
+    }
+    50% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #e6ff00, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff, 0 0 80px #0ff;
+    }
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6ff00, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
+    }
 }
